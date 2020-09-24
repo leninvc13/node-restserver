@@ -121,35 +121,6 @@ app.get('/usuarios', verificacionToken, (req, res) => {
     })
 })
 
-  
-//   app.delete('/usuarios/:id', function(req, res){
-//       let id = req.params.id;
-
-//       Usuario.findByIdAndRemove(id, (err, UsuarioBorrado) => {
-//         if( err ){
-//             return res.status(400).json({
-//                 ok: false,
-//                 err
-//             });
-//         }
-
-//         if( !UsuarioBorrado ){
-//             return res.status(400).json({
-//                 ok: false,
-//                 error: {
-//                     message: 'Usuario no encontrado',
-
-//                 }
-//             });
-//         }
-
-//         res.json({
-//             ok: true,
-//             usuario: UsuarioBorrado
-//         });
-
-//       });
-//   })
 
 
   module.exports = app;
